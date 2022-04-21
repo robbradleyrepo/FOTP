@@ -1,0 +1,187 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (internal use only)"
+      }
+    },
+    "_description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Description (internal use only)",
+        "placeholder": "To remind everyone what this snippet is used for..."
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "testimonials": [],
+          "features": [
+            {
+              "name": "hero",
+              "display": "All hero sized elements"
+            },
+            {
+              "name": "standard",
+              "display": "First feature is a hero element and the rest in a 3x1 row on desktop"
+            }
+          ],
+          "snippets": [],
+          "faq_category": [],
+          "expert_quote": []
+        },
+        "choices": {
+          "features": {
+            "type": "Slice",
+            "fieldset": "Features",
+            "description": "Repeatable feature content inc. image",
+            "icon": "burst_mode",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "image"
+                }
+              },
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "em",
+                  "label": "Heading"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading1, strong, em, list-item, o-list-item",
+                  "label": "description"
+                }
+              },
+              "call_to_action": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "em",
+                  "label": "Call to action"
+                }
+              },
+              "call_to_action_target": {
+                "type": "Text",
+                "config": {
+                  "label": "Call to action target",
+                  "placeholder": "eg `/path` to change route or `#target` to scroll"
+                }
+              },
+              "image_placement": {
+                "type": "Select",
+                "config": {
+                  "options": ["First", "Last"],
+                  "default_value": "First",
+                  "label": "Image placement"
+                }
+              }
+            }
+          },
+          "testimonials": {
+            "type": "Slice",
+            "fieldset": "Testimonials",
+            "description": "Testimonials",
+            "icon": "face",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, em",
+                  "allowTargetBlank": true,
+                  "label": "heading"
+                }
+              }
+            },
+            "repeat": {
+              "testimonial": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": ["testimonial"],
+                  "label": "Testimonial"
+                }
+              }
+            }
+          },
+          "faq_category": {
+            "type": "Slice",
+            "fieldset": "FAQ Category",
+            "description": "A group of FAQs",
+            "icon": "help",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph, em",
+                  "label": "heading"
+                }
+              }
+            },
+            "repeat": {
+              "faq": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": ["faq"],
+                  "label": "faq"
+                }
+              }
+            }
+          },
+          "expert_quote": {
+            "type": "Slice",
+            "fieldset": "Expert Quote",
+            "description": "Words of wisdom",
+            "icon": "format_quote",
+            "display": "list",
+            "non-repeat": {
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph, em",
+                  "label": "Heading"
+                }
+              },
+              "quote": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "label": "Quote"
+                }
+              },
+              "expert": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": ["expert"],
+                  "label": "Expert"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

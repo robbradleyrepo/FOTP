@@ -1,0 +1,137 @@
+{
+  "common": {
+    "close": "Close",
+    "email": "hello@fotp.com",
+    "footer": {
+      "contact": "Need help?<br />Call us: <Phone>323-922-5737</Phone> 9am - 5pm PT, Mon - Fri<br />Email us: <Email>$t(common:email)</Email>",
+      "copyright": "© 2020 Front Of The Pack",
+      "fda": "*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.",
+      "links": {
+        "account": "Account",
+        "approach": "Our Approach",
+        "blog": "Latest Articles",
+        "careers": "Careers",
+        "contact": "Contact Us",
+        "email": "$t(common:email)",
+        "evidence": "Research",
+        "faq": "FAQs",
+        "food": "Air-Dried Food",
+        "influencer": "Become an Ambassador",
+        "ingredients": "Ingredients",
+        "privacy": "Privacy Policy",
+        "refer": "Give 20%, Get 20%",
+        "refunds": "Return & Refund Policy",
+        "reviews": "Reviews",
+        "experts": "Our Experts",
+        "shelters": "Shelters",
+        "shipping": "Shipping Policy",
+        "shopAll": "Shop All",
+        "story": "Our Story",
+        "sustainability": "Sustainability",
+        "terms": "Terms of Service",
+        "testimonials": "Testimonials",
+        "testing": "Testing & Transparency",
+        "treats": "Treats",
+        "uls": "Unconditional Love Stories",
+        "vet": "Veterinarians FAQs",
+        "workwithus": "Work With Us"
+      },
+      "love": {
+        "emoji": "love",
+        "text": "Made with unconditional <Love /> in California."
+      },
+      "signup": "Subscribe to receive news, tips and unconditional love.",
+      "titles": {
+        "about": "About",
+        "help": "Help",
+        "join": "Join the pack",
+        "learn": "Learn",
+        "science": "Science",
+        "shop": "Shop",
+        "story": "Our Story"
+      }
+    },
+    "fotp": "Front Of The Pack",
+    "free": "Free",
+    "happyPups": "100,000",
+    "loading": "Loading…",
+    "navigation": {
+      "about": "About",
+      "account": "Account",
+      "approach": "Our Approach",
+      "articles": "Latest Articles",
+      "blog": "Blog",
+      "contact": "Need further help? Give us a woof",
+      "email": "$t(common:email)",
+      "evidence": "Evidence",
+      "explore": "Explore",
+      "faq": "FAQs",
+      "giveGet": "Give $20, Get $20",
+      "help": "Help",
+      "home": "Home",
+      "ingredients": "Ingredients",
+      "learn": "Learn",
+      "love": "Love",
+      "menu": "Menu",
+      "refer": "Refer a Friend",
+      "reviews": "Reviews",
+      "experts": "Experts",
+      "science": "Science",
+      "shelters": "Shelters",
+      "shop": "Shop",
+      "story": "Our Story",
+      "sustainability": "Sustainability",
+      "education": "Education",
+      "testimonials": "Testimonials",
+      "testing": "Testing & Transparency",
+      "treats": "Treats",
+      "uls": {
+        "label": "Unconditional Love Stories",
+        "subtitle": "Our podcast with TV Vet Dr Scott Miller"
+      },
+      "vet": "Veterinarians FAQs"
+    },
+    "subnavigation": {
+      "science": {
+        "approach": "Our Approach",
+        "evidence": "Evidence",
+        "experts": "Experts",
+        "ingredients": "Ingredients",
+        "testing": "Testing & Transparency"
+      },
+      "collections": {
+        "all": "All Products",
+        "food": "Food",
+        "treats": "Treats",
+        "supplements": "Supplements"
+      }
+    },
+    "support": {
+      "area": {
+        "allergies": "Allergies",
+        "calming": "Calming",
+        "dental": "Dental",
+        "digestion": "Digestion",
+        "heart": "Heart Health",
+        "joints": "Joints",
+        "protect": "Protect & Repair",
+        "senior": "Senior Support",
+        "skinCoat": "Skin & Coat"
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "title": {
+        "full": "Front Of The Pack",
+        "short": "Home"
+      }
+    },
+    "privacy": {
+      "title": {
+        "full": "Privacy Policy",
+        "short": "Privacy Policy"
+      }
+    }
+  }
+}

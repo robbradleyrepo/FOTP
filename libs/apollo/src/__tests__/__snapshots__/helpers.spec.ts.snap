@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sanitize should remove all \`__typename\` keys 1`] = `
+Object {
+  "bar": Object {
+    "nested": Object {
+      "value": 123,
+    },
+  },
+  "baz": "baz",
+  "foo": Array [
+    Object {
+      "index": 0,
+    },
+    Object {
+      "index": 1,
+    },
+    Object {
+      "index": 3,
+    },
+  ],
+}
+`;
+
+exports[`stringifyApolloError should stringify GraphQL errors 1`] = `"{\\"graphQLErrors\\":\\"[\\\\\\"{\\\\\\\\\\\\\\"stack\\\\\\\\\\\\\\":\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Dummy \`GraphQLError\` stack\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"message\\\\\\\\\\\\\\":\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Foo\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\":\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GraphQLError\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\"}\\\\\\"]\\",\\"networkError\\":\\"null\\",\\"message\\":\\"\\\\\\"GraphQL error: Foo\\\\\\"\\"}"`;
+
+exports[`stringifyApolloError should stringify all top-level error data 1`] = `"{\\"graphQLErrors\\":\\"[]\\",\\"networkError\\":\\"null\\",\\"message\\":\\"\\\\\\"\\\\\\"\\"}"`;
+
+exports[`stringifyApolloError should stringify network errors 1`] = `"{\\"graphQLErrors\\":\\"[]\\",\\"networkError\\":\\"\\\\\\"{\\\\\\\\\\\\\\"stack\\\\\\\\\\\\\\":\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Dummy \`Error\` stack\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\",\\\\\\\\\\\\\\"message\\\\\\\\\\\\\\":\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Bar\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\"}\\\\\\"\\",\\"message\\":\\"\\\\\\"Network error: Bar\\\\\\"\\"}"`;

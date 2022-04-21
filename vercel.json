@@ -1,0 +1,32 @@
+{
+  "headers": [
+    {
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "cache-control",
+          "value": "public,max-age=31536000,immutable"
+        }
+      ],
+      "source": "/_next/static/(.*)"
+    },
+    {
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "cache-control",
+          "value": "public,max-age=3600"
+        }
+      ],
+      "source": "/fonts/(.*)"
+    }
+  ],
+  "regions": ["iad1"],
+  "version": 2
+}

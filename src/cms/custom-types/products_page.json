@@ -1,0 +1,26 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "reviews": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "review": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["review"],
+              "label": "Review"
+            }
+          }
+        },
+        "label": "Reviews"
+      }
+    }
+  }
+}

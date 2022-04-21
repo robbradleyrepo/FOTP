@@ -1,0 +1,49 @@
+{
+  "Main": {
+    "_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title (internal use only)"
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Handle"
+      }
+    },
+    "tests": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "test": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["lab_test"],
+              "label": "Lab test"
+            }
+          }
+        },
+        "label": "Lab tests"
+      }
+    },
+    "labs": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "lab": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["lab"],
+              "label": "Lab"
+            }
+          }
+        },
+        "label": "Labs"
+      }
+    }
+  }
+}

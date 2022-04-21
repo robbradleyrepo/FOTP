@@ -1,0 +1,49 @@
+{
+  "Main": {
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "title"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "table": []
+        },
+        "choices": {
+          "table": {
+            "type": "Slice",
+            "fieldset": "Table",
+            "description": "Table",
+            "icon": "grid_on",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "label"
+                }
+              },
+              "us": {
+                "type": "Text",
+                "config": {
+                  "label": "Us"
+                }
+              },
+              "them": {
+                "type": "Text",
+                "config": {
+                  "label": "Them"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> should use the negative X-axis gutter values as the \`ul\` element's left margin 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {},
+    ],
+    Array [
+      Object {},
+      Object {
+        "marginLeft": "-grid negative left margin",
+        "marginTop": undefined,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`<Grid /> should use the negative Y-axis gutter values as the \`ul\` element's top margin 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {},
+    ],
+    Array [
+      Object {},
+      Object {
+        "marginLeft": undefined,
+        "marginTop": "-grid negative top margin",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`<Item /> should use its own \`width\` value in preference to the \`Grid\` component's \`itemWidth\` 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {},
+    ],
+    Array [
+      Object {},
+      Object {
+        "marginLeft": undefined,
+        "marginTop": undefined,
+      },
+    ],
+    Array [
+      Object {},
+      Object {
+        "paddingLeft": undefined,
+        "paddingTop": undefined,
+        "width": "item width",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`<Item /> should use the \`Grid\` component's \`itemWidth\` as the default width 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {},
+    ],
+    Array [
+      Object {},
+      Object {
+        "marginLeft": undefined,
+        "marginTop": undefined,
+      },
+    ],
+    Array [
+      Object {},
+      Object {
+        "paddingLeft": undefined,
+        "paddingTop": undefined,
+        "width": "item default width",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`<Item /> should use the \`Grid\` component's X-axis gutter values as its left padding 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {},
+    ],
+    Array [
+      Object {},
+      Object {
+        "marginLeft": "-item left padding",
+        "marginTop": undefined,
+      },
+    ],
+    Array [
+      Object {},
+      Object {
+        "paddingLeft": "item left padding",
+        "paddingTop": undefined,
+        "width": undefined,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+  ],
+}
+`;
+
+exports[`<Item /> should use the \`Grid\` component's Y-axis gutter values as its top padding 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {},
+    ],
+    Array [
+      Object {},
+      Object {
+        "marginLeft": undefined,
+        "marginTop": "-item top padding",
+      },
+    ],
+    Array [
+      Object {},
+      Object {
+        "paddingLeft": undefined,
+        "paddingTop": "item top padding",
+        "width": undefined,
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+    Object {
+      "type": "return",
+      "value": [Function],
+    },
+  ],
+}
+`;

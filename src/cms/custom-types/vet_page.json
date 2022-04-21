@@ -1,0 +1,38 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "title (Internal use only)"
+      }
+    },
+    "questions": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "question": {
+            "type": "StructuredText",
+            "config": {
+              "single": "strong, em",
+              "label": "Question"
+            }
+          },
+          "answer": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph, strong, em, hyperlink, list-item, o-list-item",
+              "label": "Answer"
+            }
+          }
+        },
+        "label": "questions"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageCustomization should render the customization, if available, using the provided attributes 1`] = `
+<img
+  class="customization___StyledImg-sc-39ar74-0 fIEitt"
+  sizes="100vw"
+  src="https://res.cloudinary.com/test/image/fetch/f_auto,q_auto,w_123/https%3A%2F%2Fimages.prismic.io%2Fprod-fotp-frontend%2Ffoo.jpg%3Fauto%3Dcompress%2Cformat"
+  srcset="https://res.cloudinary.com/test/image/fetch/f_auto,q_auto,w_456/https%3A%2F%2Fimages.prismic.io%2Fprod-fotp-frontend%2Ffoo.jpg%3Fauto%3Dcompress%2Cformat 456w,https://res.cloudinary.com/test/image/fetch/f_auto,q_auto,w_789/https%3A%2F%2Fimages.prismic.io%2Fprod-fotp-frontend%2Ffoo.jpg%3Fauto%3Dcompress%2Cformat 789w"
+/>
+`;
+
+exports[`RichTextCustomization should render the customization, if available, using the provided components 1`] = `
+Array [
+  <li
+    data-testid="list-item"
+  >
+    One
+  </li>,
+  <li
+    data-testid="list-item"
+  >
+    Two
+  </li>,
+  <li
+    data-testid="list-item"
+  >
+    Three
+  </li>,
+]
+`;
+
+exports[`TitleCustomization should render the customization, if available, using the provided components 1`] = `
+<h1
+  data-testid="heading"
+>
+  New and improved
+</h1>
+`;

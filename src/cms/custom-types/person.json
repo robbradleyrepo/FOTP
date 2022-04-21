@@ -1,0 +1,32 @@
+{
+  "Main": {
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (internal use only)"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph, strong, em",
+        "label": "Name"
+      }
+    },
+    "role": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph, strong, em",
+        "label": "Role"
+      }
+    }
+  }
+}

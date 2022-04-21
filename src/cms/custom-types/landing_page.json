@@ -1,0 +1,544 @@
+{
+  "Main": {
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (internal use only)",
+        "useAsTitle": true
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "product": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "label": "product",
+        "customtypes": ["product"]
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "rich_text": [
+            {
+              "display": "Standard",
+              "name": "standard"
+            },
+            {
+              "display": "Reverse",
+              "name": "reverse"
+            },
+            {
+              "display": "Feature 1 (light green)",
+              "name": "feature_1"
+            },
+            {
+              "display": "Feature 2 (yellow)",
+              "name": "feature_"
+            }
+          ],
+          "image": [],
+          "youtube": [],
+          "cta": [],
+          "extended_cta": [],
+          "placeholder": [],
+          "quote": [],
+          "enhanced_cta": [],
+          "product_reviews": [],
+          "product_review_highlights": [],
+          "review_highlights": []
+        },
+        "choices": {
+          "rich_text": {
+            "type": "Slice",
+            "fieldset": "Rich text",
+            "description": "Basic text content",
+            "icon": "reorder",
+            "display": "list",
+            "non-repeat": {
+              "content": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading1, heading2, heading3, strong, em, hyperlink, list-item, o-list-item, o-list-item",
+                  "allowTargetBlank": true,
+                  "label": "content"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "image": {
+            "type": "Slice",
+            "fieldset": "Image",
+            "description": "A widescreen image with optional caption and link",
+            "icon": "image",
+            "display": "list",
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "caption": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "strong, em, hyperlink",
+                  "allowTargetBlank": true,
+                  "label": "Caption"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "allowTargetBlank": true,
+                  "label": "Link"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "youtube": {
+            "type": "Slice",
+            "fieldset": "YouTube",
+            "description": "A YouTube Video embed",
+            "icon": "video_library",
+            "display": "list",
+            "non-repeat": {
+              "video_id": {
+                "type": "Text",
+                "config": {
+                  "label": "Video ID",
+                  "placeholder": "Eg “dQw4w9WgXcQ”"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "cta": {
+            "type": "Slice",
+            "fieldset": "CTA",
+            "description": "A call to action link",
+            "icon": "error",
+            "display": "list",
+            "non-repeat": {
+              "text": {
+                "type": "Text",
+                "config": {
+                  "label": "Text"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link"
+                }
+              },
+              "type": {
+                "type": "Select",
+                "config": {
+                  "options": ["Primary", "Secondary"],
+                  "default_value": "Primary",
+                  "label": "Type"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "enhanced_cta": {
+            "type": "Slice",
+            "fieldset": "Enhanced CTA",
+            "description": "A call to action callout with image, text and button",
+            "icon": "art_track",
+            "display": "list",
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "image_style": {
+                "type": "Select",
+                "config": {
+                  "options": ["Background", "Cropped"],
+                  "default_value": "Background",
+                  "label": "Image style"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "strong, em",
+                  "label": "Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "strong, em",
+                  "label": "Description"
+                }
+              },
+              "text": {
+                "type": "Text",
+                "config": {
+                  "label": "Button text"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link"
+                }
+              },
+              "background_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Background color"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "placeholder": {
+            "type": "Slice",
+            "fieldset": "Placeholder",
+            "description": "Pre-defined content blocks ",
+            "icon": "aspect_ratio",
+            "display": "list",
+            "non-repeat": {
+              "placeholder": {
+                "type": "Select",
+                "config": {
+                  "options": [
+                    "Product Benefits",
+                    "Product Ingredients",
+                    "Product Reviews"
+                  ],
+                  "label": "content"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "quote": {
+            "type": "Slice",
+            "fieldset": "Quote",
+            "description": "Quote with attribution",
+            "icon": "format_quote",
+            "display": "list",
+            "non-repeat": {
+              "quote": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "strong, em",
+                  "label": "Quote"
+                }
+              },
+              "attribution": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "strong, em",
+                  "label": "Attribution"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "product_reviews": {
+            "type": "Slice",
+            "fieldset": "Product Reviews",
+            "description": "Detailed product review listing",
+            "icon": "star",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "review": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": ["review"],
+                  "label": "Review"
+                }
+              }
+            }
+          },
+          "review_highlights": {
+            "type": "Slice",
+            "fieldset": "Review Highlights",
+            "description": "Short highlights from product reviews",
+            "icon": "stars",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "review": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": ["review"],
+                  "label": "Review"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Nav": {
+    "nav_enabled": {
+      "type": "Boolean",
+      "config": {
+        "default_value": true,
+        "label": "Nav enabled"
+      }
+    },
+    "nav_style": {
+      "type": "Select",
+      "config": {
+        "options": ["Standard", "Reverse"],
+        "default_value": "Standard",
+        "label": "Navigation bar style"
+      }
+    },
+    "nav_links_enabled": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Show menu links in nav"
+      }
+    },
+    "nav_contact": {
+      "type": "Select",
+      "config": {
+        "options": ["Standard", "None"],
+        "default_value": "Standard",
+        "label": "Contact details in nav"
+      }
+    },
+    "nav_shop_link": {
+      "type": "Link",
+      "config": {
+        "label": "\"Shop\" link"
+      }
+    },
+    "nav_cta_text": {
+      "type": "Text",
+      "config": {
+        "label": "CTA text"
+      }
+    },
+    "nav_cta_link": {
+      "type": "Link",
+      "config": {
+        "label": "CTA link"
+      }
+    }
+  },
+  "Header": {
+    "header_image_hero": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 2560,
+          "height": 1220
+        },
+        "thumbnails": [
+          {
+            "name": "mobile",
+            "width": 1000,
+            "height": 1800
+          }
+        ],
+        "label": "Header image (hero)"
+      }
+    },
+    "header_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Header image (regular)"
+      }
+    },
+    "header_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Header title"
+      }
+    },
+    "header_strapline": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Header strapline"
+      }
+    },
+    "header_publication_date": {
+      "type": "Select",
+      "config": {
+        "options": ["None", "Yesterday"],
+        "default_value": "None",
+        "label": "Publication date"
+      }
+    },
+    "header_sponsored_by": {
+      "type": "Select",
+      "config": {
+        "options": ["None", "Front Of The Pack"],
+        "default_value": "None",
+        "label": "Sponsored by"
+      }
+    },
+    "header_promo_banner": {
+      "type": "StructuredText",
+      "config": {
+        "single": "em, hyperlink",
+        "label": "Header promo banner"
+      }
+    },
+    "header_press_banner": {
+      "type": "Select",
+      "config": {
+        "options": ["None", "Logos", "Logos With Links"],
+        "default_value": "None",
+        "label": "Press banner style"
+      }
+    },
+    "header_note": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Header note"
+      }
+    },
+    "author": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["expert", "person"],
+        "label": "Author"
+      }
+    }
+  },
+  "CTA": {
+    "cta_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "cta_image_style": {
+      "type": "Select",
+      "config": {
+        "options": ["Background", "Cropped"],
+        "default_value": "Background",
+        "label": "Image style"
+      }
+    },
+    "cta_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Title"
+      }
+    },
+    "cta_description": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Description"
+      }
+    },
+    "cta_text": {
+      "type": "Text",
+      "config": {
+        "label": "Button text"
+      }
+    },
+    "cta_link": {
+      "type": "Link",
+      "config": {
+        "label": "Link"
+      }
+    },
+    "cta_background_color": {
+      "type": "Color",
+      "config": {
+        "label": "Background color"
+      }
+    }
+  },
+  "Legal": {
+    "legal_banner_enabled": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Enable legal banner?"
+      }
+    },
+    "legal_disclaimer": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, list-item, o-list-item, o-list-item",
+        "label": "Footer disclaimer"
+      }
+    }
+  },
+  "SEO": {
+    "seo_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO title",
+        "placeholder": "The title of the page shown on the browser page and search results. Max 60 characters."
+      }
+    },
+    "seo_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO description",
+        "placeholder": "Optional page summary often used in search results. Max 160 characters."
+      }
+    },
+    "social_media_title": {
+      "type": "Text",
+      "config": {
+        "label": "Social media title",
+        "placeholder": "Optional page title used when the page is shared. Leave blank to use SEO title. Max 55 characters."
+      }
+    },
+    "social_media_description": {
+      "type": "Text",
+      "config": {
+        "label": "Social media description",
+        "placeholder": "Optional description used when the page is shared. Leave blank to use SEO description. Max 200 characters."
+      }
+    },
+    "social_media_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1200,
+          "height": 630
+        },
+        "thumbnails": [],
+        "label": "Social media image"
+      }
+    }
+  }
+}

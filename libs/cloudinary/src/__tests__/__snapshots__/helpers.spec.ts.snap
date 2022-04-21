@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFetchedImageUrl should generate a URL based on the provided parameters 1`] = `"https://res.cloudinary.com/stratus/video/fetch/f_auto,q_123,w_456/https%3A%2F%2Fwww.fillmurray.com%2F720%2F720"`;
+
+exports[`getFetchedImageUrl should handle an empty array of flags 1`] = `"https://res.cloudinary.com/stratus/image/fetch/f_auto,q_123,w_456/https%3A%2F%2Fwww.fillmurray.com%2F720%2F720"`;
+
+exports[`getFetchedImageUrl should include flags in a consistent order 1`] = `"https://res.cloudinary.com/stratus/image/fetch/f_auto,fl_any_format,fl_clip,fl_lossy,q_123,w_456/https%3A%2F%2Fwww.fillmurray.com%2F720%2F720"`;
+
+exports[`getFetchedImageUrl should use \`auto\` if no \`quality\` is provided 1`] = `"https://res.cloudinary.com/stratus/image/fetch/f_auto,q_auto,w_456/https%3A%2F%2Fwww.fillmurray.com%2F720%2F720"`;
+
+exports[`getFetchedImageUrl should use \`auto\` if no \`width\` is provided 1`] = `"https://res.cloudinary.com/stratus/image/fetch/f_auto,q_123,w_auto/https%3A%2F%2Fwww.fillmurray.com%2F720%2F720"`;
+
+exports[`getFetchedImageUrl should use \`image\` if no \`type\` is provided 1`] = `"https://res.cloudinary.com/stratus/image/fetch/f_auto,q_123,w_456/https%3A%2F%2Fwww.fillmurray.com%2F720%2F720"`;
+
+exports[`getFetchedImageUrl should use the \`defaultCloudName\` if no \`cloudName\` is provided 1`] = `"https://res.cloudinary.com/cumulus/image/fetch/f_auto,q_123,w_456/https%3A%2F%2Fwww.fillmurray.com%2F720%2F720"`;
+
+exports[`getUploadedImageUrl should generate a URL based on the provided parameters 1`] = `"https://res.cloudinary.com/stratus/video/upload/f_auto,q_123,w_456/v1/alto/foo"`;
+
+exports[`getUploadedImageUrl should handle an empty array of flags 1`] = `"https://res.cloudinary.com/stratus/image/upload/f_auto,q_123,w_456/v1/alto/foo"`;
+
+exports[`getUploadedImageUrl should include flags in a consistent order 1`] = `"https://res.cloudinary.com/stratus/image/upload/f_auto,fl_any_format,fl_clip,fl_lossy,q_123,w_456/v1/alto/foo"`;
+
+exports[`getUploadedImageUrl should use \`auto\` if no \`quality\` is provided 1`] = `"https://res.cloudinary.com/stratus/image/upload/f_auto,q_auto,w_456/v1/alto/foo"`;
+
+exports[`getUploadedImageUrl should use \`auto\` if no \`width\` is provided 1`] = `"https://res.cloudinary.com/stratus/image/upload/f_auto,q_123,w_auto/v1/alto/foo"`;
+
+exports[`getUploadedImageUrl should use \`image\` if no \`type\` is provided 1`] = `"https://res.cloudinary.com/stratus/image/upload/f_auto,q_123,w_456/v1/alto/foo"`;
+
+exports[`getUploadedImageUrl should use the \`defaultCloudName\` if no \`cloudName\` is provided 1`] = `"https://res.cloudinary.com/cumulus/image/upload/f_auto,q_123,w_456/v1/alto/foo"`;

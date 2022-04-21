@@ -1,0 +1,67 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Title"
+      }
+    },
+    "highlight": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Highlight"
+      }
+    },
+    "body": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Body"
+      }
+    },
+    "reviewer": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Reviewer"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "rating": {
+      "type": "Number",
+      "config": {
+        "label": "Rating",
+        "max": 5,
+        "min": 0,
+        "step": 0.1
+      }
+    },
+    "ease_of_use": {
+      "type": "Number",
+      "config": {
+        "label": "Ease of use",
+        "max": 5,
+        "min": 0,
+        "step": 1
+      }
+    },
+    "effectiveness": {
+      "type": "Number",
+      "config": {
+        "label": "Effectiveness",
+        "max": 5,
+        "min": 0,
+        "step": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getUserErrorsMapper should throw if any errors are missing a map entry 1`] = `
+"Customer user errors contained unmapped fields:
+  {\\"code\\":\\"CONTAINS_HTML_TAGS\\",\\"field\\":[\\"input\\",\\"firstName\\"],\\"message\\":\\"First name cannot contain HTML tags\\"}
+,{\\"code\\":\\"CONTAINS_HTML_TAGS\\",\\"field\\":[\\"input\\",\\"lastName\\"],\\"message\\":\\"Last name cannot contain HTML tags\\"}
+"
+`;

@@ -1,0 +1,29 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "message": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Message"
+      }
+    },
+    "discount_code": {
+      "type": "Text",
+      "config": {
+        "label": "Discount code"
+      }
+    },
+    "redirect_url": {
+      "type": "Link",
+      "config": {
+        "label": "Redirect URL"
+      }
+    }
+  }
+}

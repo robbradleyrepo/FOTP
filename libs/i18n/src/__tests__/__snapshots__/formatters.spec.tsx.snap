@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useDateTimeFormatter should combine the default and explicity formatting options 1`] = `"Saturday, February 1, 2020, 4:00:00 AM"`;
+
+exports[`useDateTimeFormatter should combine the default and explicity formatting options 2`] = `"Sat, Feb 1, 4:00:00 AM"`;
+
+exports[`useDateTimeFormatter should fallback to UTC for invalid or unhandled timezones 1`] = `"2/1/2020, UTC"`;

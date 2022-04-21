@@ -1,0 +1,110 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "published_on": {
+      "type": "Date",
+      "config": {
+        "label": "Published on"
+      }
+    },
+    "vidalytics_video_id": {
+      "type": "Text",
+      "config": {
+        "label": "Vidalytics video ID"
+      }
+    },
+    "layout": {
+      "type": "Select",
+      "config": {
+        "options": ["Standard", "Fullscreen"],
+        "default_value": "Standard",
+        "label": "Layout"
+      }
+    },
+    "custom_page_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "em",
+        "label": "Custom page title"
+      }
+    },
+    "bundle_picker_display_type": {
+      "type": "Select",
+      "config": {
+        "options": ["After delay", "On click"],
+        "default_value": "After delay",
+        "label": "Bundle picker display type"
+      }
+    },
+    "bundle_picker_delay": {
+      "type": "Number",
+      "config": {
+        "label": "Bundle picker delay (seconds)"
+      }
+    },
+    "additional_content": {
+      "type": "Select",
+      "config": {
+        "options": ["Show all", "Hide all"],
+        "default_value": "Show all",
+        "label": "Additional content"
+      }
+    }
+  },
+  "Details": {
+    "faqs": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["snippet"],
+        "label": "FAQs"
+      }
+    },
+    "references": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["references"],
+        "label": "References"
+      }
+    },
+    "transcript": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["video_transcript"],
+        "label": "Transcript"
+      }
+    }
+  },
+  "Nav": {
+    "nav_logo": {
+      "type": "Select",
+      "config": {
+        "options": ["Standard", "None"],
+        "default_value": "Standard",
+        "label": "FOTP logo"
+      }
+    },
+    "nav_contact": {
+      "type": "Select",
+      "config": {
+        "options": ["Standard", "None"],
+        "default_value": "Standard",
+        "label": "Contact details in nav"
+      }
+    },
+    "legal_banner_enabled": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Enable legal banner?"
+      }
+    }
+  }
+}

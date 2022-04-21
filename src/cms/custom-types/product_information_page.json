@@ -1,0 +1,56 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "product": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["product"],
+        "label": "product"
+      }
+    },
+    "faqs": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["snippet"],
+        "label": "FAQs"
+      }
+    }
+  },
+  "SEO": {
+    "seo_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO title",
+        "placeholder": "The title of the page shown on the browser page and search results. 50-60 characters."
+      }
+    },
+    "seo_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO description",
+        "placeholder": "Optional page summary often used in search results. 50-160 characters."
+      }
+    },
+    "social_media_title": {
+      "type": "Text",
+      "config": {
+        "label": "Social media title",
+        "placeholder": "Optional page title used when the page is shared. Leave blank to use SEO title. Max 55 characters."
+      }
+    },
+    "social_media_description": {
+      "type": "Text",
+      "config": {
+        "label": "Social media description",
+        "placeholder": "Optional description used when the page is shared. Leave blank to use SEO description. Max 200 characters."
+      }
+    }
+  }
+}

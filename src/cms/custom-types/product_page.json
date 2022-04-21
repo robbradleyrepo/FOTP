@@ -1,0 +1,172 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "_title (internal use only)"
+      }
+    },
+    "product": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["product"],
+        "label": "product"
+      }
+    }
+  },
+  "Key features": {
+    "key_features_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "em",
+        "label": "Title"
+      }
+    },
+    "key_features_content": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading1, strong, em, hyperlink, list-item",
+        "label": "Content"
+      }
+    },
+    "key_features_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    }
+  },
+  "Usage": {
+    "usage_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "em",
+        "label": "Title"
+      }
+    },
+    "usage_intro": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "label": "Intro"
+      }
+    },
+    "usage_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    }
+  },
+  "Experts": {
+    "expert_quotes": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "expert": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["expert"],
+              "label": "Expert"
+            }
+          },
+          "quote": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph, em, hyperlink",
+              "label": "Quote"
+            }
+          }
+        },
+        "label": "Expert quotes"
+      }
+    }
+  },
+  "Reviews": {
+    "reviews_highlights": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "highlight": {
+            "type": "StructuredText",
+            "config": {
+              "single": "em",
+              "label": "Highlight"
+            }
+          }
+        },
+        "label": "Review highlights"
+      }
+    },
+    "reviews": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "review": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["review"],
+              "label": "Review"
+            }
+          }
+        },
+        "label": "Reviews"
+      }
+    }
+  },
+  "Key ingredients": {
+    "key_ingredients_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "em",
+        "label": "Title"
+      }
+    },
+    "key_ingredients_intro": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink, list-item",
+        "label": "Intro"
+      }
+    },
+    "key_ingredients": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "ingredient": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["ingredient"],
+              "label": "Ingredient"
+            }
+          }
+        },
+        "label": "Ingredients"
+      }
+    }
+  },
+  "FAQs": {
+    "faqs": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["snippet"],
+        "label": "FAQs"
+      }
+    }
+  }
+}

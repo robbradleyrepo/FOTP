@@ -1,0 +1,20 @@
+{
+  "Main": {
+    "studies": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "study": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["study"],
+              "label": "Study"
+            }
+          }
+        },
+        "label": "Studies"
+      }
+    }
+  }
+}

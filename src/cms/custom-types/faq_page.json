@@ -1,0 +1,57 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Handle"
+      }
+    },
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (internal use only)"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "faq_category": [
+            {
+              "name": "faq_category",
+              "display": "faq category"
+            }
+          ]
+        },
+        "choices": {
+          "faq_category": {
+            "type": "Slice",
+            "fieldset": "FAQ Category",
+            "description": "A grouping of questions around a theme",
+            "icon": "folder",
+            "display": "list",
+            "non-repeat": {
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label"
+                }
+              }
+            },
+            "repeat": {
+              "faq": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": ["faq"],
+                  "label": "faq"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

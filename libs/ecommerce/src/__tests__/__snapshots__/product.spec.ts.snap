@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getProductVariantList should throw an error if the \`defaultVariantOrder\` metafield contains an invalid SKU 1`] = `
+"Invalid product metafield: \\"global:default_variant_order\\".
+    Allowed values: test, test-x2, test-x3
+    Received: test-x3, test-x2, test, foo"
+`;
+
+exports[`getVariantPrices should return the discount base on the regular price for the current, one-off and subscription prices 1`] = `
+Object {
+  "percentage": 11.11358079573238,
+  "price": Object {
+    "amount": "5",
+    "currencyCode": "USD",
+  },
+}
+`;
+
+exports[`getVariantPrices should return the discount base on the regular price for the current, one-off and subscription prices 2`] = `
+Object {
+  "percentage": 24.44987775061125,
+  "price": Object {
+    "amount": "11",
+    "currencyCode": "USD",
+  },
+}
+`;

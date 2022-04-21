@@ -1,0 +1,103 @@
+{
+  "Main": {
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (internal use only)"
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph,strong,em",
+        "label": "Name"
+      }
+    },
+    "post_nominal": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph,em",
+        "label": "Post Nominal"
+      }
+    },
+    "role": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph,strong,em",
+        "label": "Role"
+      }
+    },
+    "summary": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong,em",
+        "label": "Summary",
+        "placeholder": "A paragraph summary"
+      }
+    },
+    "bio": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,strong,em,image",
+        "label": "Bio",
+        "placeholder": "A full bio"
+      }
+    },
+    "social_instagram": {
+      "type": "Text",
+      "config": {
+        "label": "Instagram handle",
+        "placeholder": "E.g. `drscottym`"
+      }
+    },
+    "social_twitter": {
+      "type": "Text",
+      "config": {
+        "label": "Twitter handle",
+        "placeholder": "E.g. `drscottym`"
+      }
+    },
+    "qualifications": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "institution_image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "institution image (1:1 ratio)"
+            }
+          },
+          "institution": {
+            "type": "Text",
+            "config": {
+              "label": "institution"
+            }
+          },
+          "course": {
+            "type": "Text",
+            "config": {
+              "label": "Course"
+            }
+          }
+        },
+        "label": "Qualifications"
+      }
+    }
+  }
+}

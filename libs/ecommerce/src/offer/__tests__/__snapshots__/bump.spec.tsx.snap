@@ -1,0 +1,626 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useBumpOffer should return a \`null\` offer if there is no valid offer for the current product 1`] = `
+Array [
+  Object {
+    "offer": null,
+    "status": "INITIALIZING",
+  },
+  Object {
+    "offer": null,
+    "status": "READY",
+  },
+]
+`;
+
+exports[`useBumpOffer should return an error status if the data fails to load 1`] = `
+Array [
+  Object {
+    "offer": null,
+    "status": "INITIALIZING",
+  },
+  Object {
+    "offer": Object {
+      "include": Object {
+        "handles": Array [
+          "foo",
+        ],
+      },
+      "product": Object {
+        "handle": "missing",
+        "sku": "missing",
+      },
+    },
+    "status": "FETCHING",
+  },
+  Object {
+    "offer": Object {
+      "include": Object {
+        "handles": Array [
+          "foo",
+        ],
+      },
+      "product": Object {
+        "handle": "missing",
+        "sku": "missing",
+      },
+    },
+    "status": "ERROR",
+  },
+]
+`;
+
+exports[`useBumpOffer should return an error status in production if the bump product does not include the specified variant 1`] = `
+Array [
+  Object {
+    "offer": null,
+    "status": "INITIALIZING",
+  },
+  Object {
+    "offer": Object {
+      "include": Object {
+        "handles": Array [
+          "foo",
+        ],
+      },
+      "product": Object {
+        "handle": "move",
+        "sku": "missing",
+      },
+    },
+    "status": "FETCHING",
+  },
+  Object {
+    "offer": Object {
+      "include": Object {
+        "handles": Array [
+          "foo",
+        ],
+      },
+      "product": Object {
+        "handle": "move",
+        "sku": "missing",
+      },
+    },
+    "status": "ERROR",
+  },
+]
+`;
+
+exports[`useBumpOffer should return null for the bump offer if the applicable offer is unavailable for sale 1`] = `
+Array [
+  Object {
+    "offer": null,
+    "status": "INITIALIZING",
+  },
+  Object {
+    "offer": Object {
+      "include": Object {
+        "handles": Array [
+          "foo",
+        ],
+      },
+      "product": Object {
+        "handle": "move",
+        "sku": "move",
+      },
+    },
+    "status": "FETCHING",
+  },
+  Object {
+    "offer": Object {
+      "include": Object {
+        "handles": Array [
+          "foo",
+        ],
+      },
+      "product": Object {
+        "handle": "move",
+        "sku": "move",
+      },
+    },
+    "product": Object {
+      "__typename": "Product",
+      "availableForSale": true,
+      "bottomline": Object {
+        "__typename": "ReviewBottomline",
+        "averageScore": 4.5,
+        "totalReviews": 2,
+      },
+      "bundleUnit": null,
+      "bundleUnitPlural": null,
+      "caloriesPerUnit": null,
+      "compareAtPriceV2": null,
+      "containers": null,
+      "defaultSelectionSku": null,
+      "defaultSelectionSubscription": null,
+      "defaultVariantOrder": null,
+      "description": "Targeted joint and mobility support",
+      "featuredImage": Object {
+        "__typename": "ImageConnection",
+        "edges": Array [
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "id": "1",
+              "src": "https://cdn.shopify.com/mock-image/product-1.jpg",
+            },
+          },
+        ],
+      },
+      "handle": "move",
+      "hasSubscription": null,
+      "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1MzU1Mzc1MzMwMDY=",
+      "images": Object {
+        "__typename": "ImageConnection",
+        "edges": Array [
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "height": 1000,
+              "id": "1",
+              "url": "https://cdn.shopify.com/mock-image/product-1.jpg",
+              "width": 1000,
+            },
+          },
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "height": 1000,
+              "id": "2",
+              "url": "https://cdn.shopify.com/mock-image/product-2.jpg",
+              "width": 1000,
+            },
+          },
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "height": 1000,
+              "id": "3",
+              "url": "https://cdn.shopify.com/mock-image/product-3.jpg",
+              "width": 1000,
+            },
+          },
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "height": 1000,
+              "id": "4",
+              "url": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+              "width": 1000,
+            },
+          },
+        ],
+      },
+      "isSubscriptionOnly": null,
+      "listingSku": null,
+      "listingSubscription": null,
+      "listingSubtitle": null,
+      "options": Array [
+        Object {
+          "__typename": "ProductOption",
+          "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0T3B0aW9uLzU4NzMxNjM4NjIwOTQ=",
+          "name": "Title",
+          "values": Array [
+            "Default Title",
+          ],
+        },
+      ],
+      "preorderShippingEstimate": null,
+      "preorderType": null,
+      "priceRange": Object {
+        "__typename": "ProductPriceRange",
+        "maxVariantPrice": Object {
+          "__typename": "MoneyV2",
+          "amount": "95.98",
+          "currencyCode": "USD",
+        },
+        "minVariantPrice": Object {
+          "__typename": "MoneyV2",
+          "amount": "35.99",
+          "currencyCode": "USD",
+        },
+      },
+      "productType": "Pet Vitamins & Supplements",
+      "seo": Object {
+        "description": "",
+        "title": "",
+      },
+      "subscriptionFrequencies": null,
+      "subscriptionUnit": null,
+      "subtitle": Object {
+        "__typename": "Metafield",
+        "id": "metafield-subtitle-move",
+        "value": "Targeted joint and mobility support",
+      },
+      "title": "Move",
+      "totalInventory": 1000,
+      "unit": null,
+      "variants": Object {
+        "__typename": "ProductVariantConnection",
+        "edges": Array [
+          Object {
+            "__typename": "ProductVariantEdge",
+            "node": Object {
+              "__typename": "ProductVariant",
+              "availableForSale": true,
+              "barcode": "123",
+              "bundleSize": null,
+              "compareAtPriceV2": Object {
+                "__typename": "MoneyV2",
+                "amount": "39.99",
+                "currencyCode": "USD",
+              },
+              "defaultShippingIntervalFrequency": Object {
+                "__typename": "Metafield",
+                "id": "defaultShippingIntervalFrequency-1",
+                "value": "1",
+              },
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTc0NjY1MDQwNjk5MA==",
+              "image": Object {
+                "__typename": "Image",
+                "height": 1000,
+                "id": "4",
+                "url": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+                "width": 1000,
+              },
+              "listingUsp": null,
+              "priceV2": Object {
+                "__typename": "MoneyV2",
+                "amount": "34.99",
+                "currencyCode": "USD",
+              },
+              "quantityAvailable": 10,
+              "selectedOptions": Array [
+                Object {
+                  "__typename": "SelectedOption",
+                  "name": "Title",
+                  "value": "Default Title",
+                },
+              ],
+              "sku": "move",
+              "subscriptionPriceAmount": Object {
+                "__typename": "Metafield",
+                "id": "Z2lkOi8vc2hvcGlmeS9NZXRhZmllbGQvMTI5ODIzNzg3NTgyMjI=",
+                "value": "29.99",
+              },
+              "title": "Default Title",
+              "units": Object {
+                "__typename": "Metafield",
+                "id": "gid://shopify/Metafield/1",
+                "value": "60",
+              },
+            },
+          },
+        ],
+      },
+      "vendor": "Front Of The Pack",
+    },
+    "status": "READY",
+    "variant": Object {
+      "__typename": "ProductVariant",
+      "availableForSale": true,
+      "barcode": "123",
+      "bundleSize": null,
+      "compareAtPriceV2": Object {
+        "__typename": "MoneyV2",
+        "amount": "39.99",
+        "currencyCode": "USD",
+      },
+      "defaultShippingIntervalFrequency": Object {
+        "__typename": "Metafield",
+        "id": "defaultShippingIntervalFrequency-1",
+        "value": "1",
+      },
+      "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTc0NjY1MDQwNjk5MA==",
+      "image": Object {
+        "__typename": "Image",
+        "height": 1000,
+        "id": "4",
+        "url": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+        "width": 1000,
+      },
+      "listingUsp": null,
+      "priceV2": Object {
+        "__typename": "MoneyV2",
+        "amount": "34.99",
+        "currencyCode": "USD",
+      },
+      "quantityAvailable": 10,
+      "selectedOptions": Array [
+        Object {
+          "__typename": "SelectedOption",
+          "name": "Title",
+          "value": "Default Title",
+        },
+      ],
+      "sku": "move",
+      "subscriptionPriceAmount": Object {
+        "__typename": "Metafield",
+        "id": "Z2lkOi8vc2hvcGlmeS9NZXRhZmllbGQvMTI5ODIzNzg3NTgyMjI=",
+        "value": "29.99",
+      },
+      "title": "Default Title",
+      "units": Object {
+        "__typename": "Metafield",
+        "id": "gid://shopify/Metafield/1",
+        "value": "60",
+      },
+    },
+  },
+]
+`;
+
+exports[`useBumpOffer should return the first applicable bump offer and fetch its product data 1`] = `
+Array [
+  Object {
+    "offer": null,
+    "status": "INITIALIZING",
+  },
+  Object {
+    "offer": Object {
+      "include": Object {
+        "handles": Array [
+          "foo",
+        ],
+      },
+      "product": Object {
+        "handle": "move",
+        "sku": "move",
+      },
+    },
+    "status": "FETCHING",
+  },
+  Object {
+    "offer": Object {
+      "include": Object {
+        "handles": Array [
+          "foo",
+        ],
+      },
+      "product": Object {
+        "handle": "move",
+        "sku": "move",
+      },
+    },
+    "product": Object {
+      "__typename": "Product",
+      "availableForSale": true,
+      "bottomline": Object {
+        "__typename": "ReviewBottomline",
+        "averageScore": 4.5,
+        "totalReviews": 2,
+      },
+      "bundleUnit": null,
+      "bundleUnitPlural": null,
+      "caloriesPerUnit": null,
+      "compareAtPriceV2": null,
+      "containers": null,
+      "defaultSelectionSku": null,
+      "defaultSelectionSubscription": null,
+      "defaultVariantOrder": null,
+      "description": "Targeted joint and mobility support",
+      "featuredImage": Object {
+        "__typename": "ImageConnection",
+        "edges": Array [
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "id": "1",
+              "src": "https://cdn.shopify.com/mock-image/product-1.jpg",
+            },
+          },
+        ],
+      },
+      "handle": "move",
+      "hasSubscription": null,
+      "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1MzU1Mzc1MzMwMDY=",
+      "images": Object {
+        "__typename": "ImageConnection",
+        "edges": Array [
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "height": 1000,
+              "id": "1",
+              "url": "https://cdn.shopify.com/mock-image/product-1.jpg",
+              "width": 1000,
+            },
+          },
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "height": 1000,
+              "id": "2",
+              "url": "https://cdn.shopify.com/mock-image/product-2.jpg",
+              "width": 1000,
+            },
+          },
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "height": 1000,
+              "id": "3",
+              "url": "https://cdn.shopify.com/mock-image/product-3.jpg",
+              "width": 1000,
+            },
+          },
+          Object {
+            "__typename": "ImageEdge",
+            "node": Object {
+              "__typename": "Image",
+              "height": 1000,
+              "id": "4",
+              "url": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+              "width": 1000,
+            },
+          },
+        ],
+      },
+      "isSubscriptionOnly": null,
+      "listingSku": null,
+      "listingSubscription": null,
+      "listingSubtitle": null,
+      "options": Array [
+        Object {
+          "__typename": "ProductOption",
+          "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0T3B0aW9uLzU4NzMxNjM4NjIwOTQ=",
+          "name": "Title",
+          "values": Array [
+            "Default Title",
+          ],
+        },
+      ],
+      "preorderShippingEstimate": null,
+      "preorderType": null,
+      "priceRange": Object {
+        "__typename": "ProductPriceRange",
+        "maxVariantPrice": Object {
+          "__typename": "MoneyV2",
+          "amount": "95.98",
+          "currencyCode": "USD",
+        },
+        "minVariantPrice": Object {
+          "__typename": "MoneyV2",
+          "amount": "35.99",
+          "currencyCode": "USD",
+        },
+      },
+      "productType": "Pet Vitamins & Supplements",
+      "seo": Object {
+        "description": "",
+        "title": "",
+      },
+      "subscriptionFrequencies": null,
+      "subscriptionUnit": null,
+      "subtitle": Object {
+        "__typename": "Metafield",
+        "id": "metafield-subtitle-move",
+        "value": "Targeted joint and mobility support",
+      },
+      "title": "Move",
+      "totalInventory": 1000,
+      "unit": null,
+      "variants": Object {
+        "__typename": "ProductVariantConnection",
+        "edges": Array [
+          Object {
+            "__typename": "ProductVariantEdge",
+            "node": Object {
+              "__typename": "ProductVariant",
+              "availableForSale": true,
+              "barcode": "123",
+              "bundleSize": null,
+              "compareAtPriceV2": Object {
+                "__typename": "MoneyV2",
+                "amount": "39.99",
+                "currencyCode": "USD",
+              },
+              "defaultShippingIntervalFrequency": Object {
+                "__typename": "Metafield",
+                "id": "defaultShippingIntervalFrequency-1",
+                "value": "1",
+              },
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTc0NjY1MDQwNjk5MA==",
+              "image": Object {
+                "__typename": "Image",
+                "height": 1000,
+                "id": "4",
+                "url": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+                "width": 1000,
+              },
+              "listingUsp": null,
+              "priceV2": Object {
+                "__typename": "MoneyV2",
+                "amount": "34.99",
+                "currencyCode": "USD",
+              },
+              "quantityAvailable": 10,
+              "selectedOptions": Array [
+                Object {
+                  "__typename": "SelectedOption",
+                  "name": "Title",
+                  "value": "Default Title",
+                },
+              ],
+              "sku": "move",
+              "subscriptionPriceAmount": Object {
+                "__typename": "Metafield",
+                "id": "Z2lkOi8vc2hvcGlmeS9NZXRhZmllbGQvMTI5ODIzNzg3NTgyMjI=",
+                "value": "29.99",
+              },
+              "title": "Default Title",
+              "units": Object {
+                "__typename": "Metafield",
+                "id": "gid://shopify/Metafield/1",
+                "value": "60",
+              },
+            },
+          },
+        ],
+      },
+      "vendor": "Front Of The Pack",
+    },
+    "status": "READY",
+    "variant": Object {
+      "__typename": "ProductVariant",
+      "availableForSale": true,
+      "barcode": "123",
+      "bundleSize": null,
+      "compareAtPriceV2": Object {
+        "__typename": "MoneyV2",
+        "amount": "39.99",
+        "currencyCode": "USD",
+      },
+      "defaultShippingIntervalFrequency": Object {
+        "__typename": "Metafield",
+        "id": "defaultShippingIntervalFrequency-1",
+        "value": "1",
+      },
+      "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTc0NjY1MDQwNjk5MA==",
+      "image": Object {
+        "__typename": "Image",
+        "height": 1000,
+        "id": "4",
+        "url": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+        "width": 1000,
+      },
+      "listingUsp": null,
+      "priceV2": Object {
+        "__typename": "MoneyV2",
+        "amount": "34.99",
+        "currencyCode": "USD",
+      },
+      "quantityAvailable": 10,
+      "selectedOptions": Array [
+        Object {
+          "__typename": "SelectedOption",
+          "name": "Title",
+          "value": "Default Title",
+        },
+      ],
+      "sku": "move",
+      "subscriptionPriceAmount": Object {
+        "__typename": "Metafield",
+        "id": "Z2lkOi8vc2hvcGlmeS9NZXRhZmllbGQvMTI5ODIzNzg3NTgyMjI=",
+        "value": "29.99",
+      },
+      "title": "Default Title",
+      "units": Object {
+        "__typename": "Metafield",
+        "id": "gid://shopify/Metafield/1",
+        "value": "60",
+      },
+    },
+  },
+]
+`;

@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest/globals": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "globals": {
+    "document": true,
+    "module": true,
+    "process": true,
+    "require": true,
+    "window": true
+  },
+  "overrides": [
+    {
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/ban-types": "warn",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-parameter-properties": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "react/prop-types": "off"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["jest", "jsx-a11y", "simple-import-sort"],
+  "root": true,
+  "rules": {
+    "no-console": [
+      "error",
+      {
+        "allow": ["info", "warn", "error"]
+      }
+    ],
+    "no-param-reassign": "error",
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
+    "sort-keys": ["warn"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

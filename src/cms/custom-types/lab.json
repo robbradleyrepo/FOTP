@@ -1,0 +1,42 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Handle"
+      }
+    },
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph, strong, em",
+        "label": "Name"
+      }
+    },
+    "logo": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": null,
+          "height": null
+        },
+        "thumbnails": [],
+        "label": "Company Logo (ratio 4:1)"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Description",
+        "placeholder": "description"
+      }
+    },
+    "website": {
+      "type": "Link",
+      "config": {
+        "label": "Website URL (read more link)"
+      }
+    }
+  }
+}

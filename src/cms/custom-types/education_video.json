@@ -1,0 +1,85 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Handle"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "summary": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,list-item,o-list-item",
+        "allowTargetBlank": true,
+        "label": "Summary"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+        "label": "Description"
+      }
+    },
+    "thumbnail": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Thumbnail"
+      }
+    },
+    "youtube_id": {
+      "type": "Text",
+      "config": {
+        "label": "Youtube ID"
+      }
+    },
+    "duration": {
+      "type": "Number",
+      "config": {
+        "label": "Duration"
+      }
+    },
+    "expert": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["expert"],
+        "label": "Expert"
+      }
+    }
+  },
+  "SEO": {
+    "seo_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Title"
+      }
+    },
+    "seo_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Description"
+      }
+    },
+    "social_media_title": {
+      "type": "Text",
+      "config": {
+        "label": "Social media title"
+      }
+    },
+    "social_media_description": {
+      "type": "Text",
+      "config": {
+        "label": "Social media description"
+      }
+    }
+  }
+}

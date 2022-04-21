@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Contact /> should render the customer service email address outside of business hours 1`] = `
+<a
+  class="contact___StyledMotionA2-sc-v3d6xv-2 cuZFfi"
+  href="mailto:hello@fotp.com"
+>
+  Questions?
+   
+  Email us:
+  <span
+    class="contact___StyledSpan2-sc-v3d6xv-3 izgUJd"
+  >
+    hello@fotp.com
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service email address outside of business hours 2`] = `
+<a
+  class="contact___StyledMotionA2-sc-v3d6xv-2 cuZFfi"
+  href="mailto:hello@fotp.com"
+>
+  Questions?
+   
+  Email us:
+  <span
+    class="contact___StyledSpan2-sc-v3d6xv-3 izgUJd"
+  >
+    hello@fotp.com
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service email address outside of business hours 3`] = `
+<a
+  class="contact___StyledMotionA2-sc-v3d6xv-2 cuZFfi"
+  href="mailto:hello@fotp.com"
+>
+  Questions?
+   
+  Email us:
+  <span
+    class="contact___StyledSpan2-sc-v3d6xv-3 izgUJd"
+  >
+    hello@fotp.com
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service email address outside of business hours 4`] = `
+<a
+  class="contact___StyledMotionA2-sc-v3d6xv-2 cuZFfi"
+  href="mailto:hello@fotp.com"
+>
+  Questions?
+   
+  Email us:
+  <span
+    class="contact___StyledSpan2-sc-v3d6xv-3 izgUJd"
+  >
+    hello@fotp.com
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service email address outside of business hours 5`] = `
+<a
+  class="contact___StyledMotionA2-sc-v3d6xv-2 cuZFfi"
+  href="mailto:hello@fotp.com"
+>
+  Questions?
+   
+  Email us:
+  <span
+    class="contact___StyledSpan2-sc-v3d6xv-3 izgUJd"
+  >
+    hello@fotp.com
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service email address outside of business hours 6`] = `
+<a
+  class="contact___StyledMotionA2-sc-v3d6xv-2 cuZFfi"
+  href="mailto:hello@fotp.com"
+>
+  Questions?
+   
+  Email us:
+  <span
+    class="contact___StyledSpan2-sc-v3d6xv-3 izgUJd"
+  >
+    hello@fotp.com
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service phone number during business hours 1`] = `
+<a
+  class="contact___StyledMotionA-sc-v3d6xv-0 gJPoce"
+  href="tel:+13239225737"
+>
+  Questions?
+   
+  Call us:
+  <span
+    class="contact___StyledSpan-sc-v3d6xv-1 cOLMzg"
+  >
+    323-922-5737
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service phone number during business hours 2`] = `
+<a
+  class="contact___StyledMotionA-sc-v3d6xv-0 gJPoce"
+  href="tel:+13239225737"
+>
+  Questions?
+   
+  Call us:
+  <span
+    class="contact___StyledSpan-sc-v3d6xv-1 cOLMzg"
+  >
+    323-922-5737
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service phone number during business hours 3`] = `
+<a
+  class="contact___StyledMotionA-sc-v3d6xv-0 gJPoce"
+  href="tel:+13239225737"
+>
+  Questions?
+   
+  Call us:
+  <span
+    class="contact___StyledSpan-sc-v3d6xv-1 cOLMzg"
+  >
+    323-922-5737
+  </span>
+</a>
+`;
+
+exports[`<Contact /> should render the customer service phone number during business hours 4`] = `
+<a
+  class="contact___StyledMotionA-sc-v3d6xv-0 gJPoce"
+  href="tel:+13239225737"
+>
+  Questions?
+   
+  Call us:
+  <span
+    class="contact___StyledSpan-sc-v3d6xv-1 cOLMzg"
+  >
+    323-922-5737
+  </span>
+</a>
+`;

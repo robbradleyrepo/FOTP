@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transformInfluencerRedirect should throw an error if an empty message is provided 1`] = `
+"Invalid InfluencerData:
+  • Missing message"
+`;
+
+exports[`transformInfluencerRedirect should throw an error if an invalid redirect URL is provided 1`] = `"Unable to resolve document with type \\"influencer_redirect\\" and ID \\"Vr9GLaDyFKgTzB2t\\""`;
+
+exports[`transformInfluencerRedirect should throw an error if an invalid redirect URL is provided 2`] = `
+"Invalid InfluencerData:
+  • Unable to resolve redirect URL: expected relative path, received \\"https://us.fotp.com/account\\""
+`;
+
+exports[`transformInfluencerRedirect should throw an error if any data is not set 1`] = `
+"Invalid InfluencerData:
+  • Missing discount code
+  • Missing message
+  • Missing redirect URL"
+`;
+
+exports[`transformInfluencerRedirect should transform the provided \`InfluencerRedirect\` into \`TransformedInfluencerRedirect\` 1`] = `
+Object {
+  "destination": "https://fotp.test/products/the-one?influencer=test&utm_campaign=test&utm_medium=share&utm_source=influencer",
+  "discountCode": "TEST10",
+  "handle": "test",
+  "message": Array [
+    Object {
+      "spans": Array [],
+      "text": "Fans of end-to-end testing will be disappointed when they don’t get an extra 10% off game-changing dog supplements with code TEST10",
+      "type": "paragraph",
+    },
+  ],
+}
+`;
+
+exports[`transformInfluencerRedirect should transform the provided \`InfluencerRedirect\` into \`TransformedInfluencerRedirect\` 2`] = `
+Object {
+  "destination": "https://fotp.test/products/the-one?foo=bar&influencer=test&utm_campaign=test&utm_medium=share&utm_source=influencer",
+  "discountCode": "TEST10",
+  "handle": "test",
+  "message": Array [
+    Object {
+      "spans": Array [],
+      "text": "Fans of end-to-end testing will be disappointed when they don’t get an extra 10% off game-changing dog supplements with code TEST10",
+      "type": "paragraph",
+    },
+  ],
+}
+`;

@@ -1,0 +1,166 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "link": {
+      "type": "Link",
+      "config": {
+        "label": "External link"
+      }
+    },
+    "authors": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "author": {
+            "type": "Text",
+            "config": {
+              "label": "Author"
+            }
+          }
+        },
+        "label": "Authors"
+      }
+    },
+    "year": {
+      "type": "Number",
+      "config": {
+        "label": "Year"
+      }
+    },
+    "publication": {
+      "type": "Text",
+      "config": {
+        "label": "Publication name"
+      }
+    },
+    "page_reference": {
+      "type": "Text",
+      "config": {
+        "label": "Volume, Page, etc"
+      }
+    },
+    "type": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "Dog",
+          "Human",
+          "Other Animal",
+          "Review",
+          "In Vitro",
+          "Misc"
+        ],
+        "label": "Study Type"
+      }
+    },
+    "participants": {
+      "type": "Text",
+      "config": {
+        "label": "Participants"
+      }
+    },
+    "duration": {
+      "type": "Text",
+      "config": {
+        "label": "Duration"
+      }
+    },
+    "sponsor": {
+      "type": "Text",
+      "config": {
+        "label": "Sponsor"
+      }
+    },
+    "double_blind": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "No",
+        "placeholder_true": "Yes",
+        "default_value": false,
+        "label": "Double blind?"
+      }
+    },
+    "placebo_controlled": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "No",
+        "placeholder_true": "Yes",
+        "default_value": false,
+        "label": "Placebo controlled?"
+      }
+    },
+    "randomised": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "No",
+        "placeholder_true": "Yes",
+        "default_value": false,
+        "label": "Randomised?"
+      }
+    }
+  },
+  "Summary": {
+    "message": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, list-item",
+        "label": "Message (our key takeaway)"
+      }
+    },
+    "findings": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "finding": {
+            "type": "StructuredText",
+            "config": {
+              "single": "paragraph, strong, em",
+              "label": "finding"
+            }
+          }
+        },
+        "label": "Findings"
+      }
+    },
+    "diagram": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "diagram"
+      }
+    }
+  },
+  "Focus": {
+    "focus": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["ingredient"],
+        "label": "Focus"
+      }
+    },
+    "directly_focused": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "No",
+        "placeholder_true": "Yes",
+        "default_value": false,
+        "label": "Directly focused?"
+      }
+    },
+    "direct_focus": {
+      "type": "Text",
+      "config": {
+        "label": "Direct focus",
+        "placeholder": "e.g. Generic Glucosamine"
+      }
+    }
+  }
+}

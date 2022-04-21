@@ -1,0 +1,17 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Handle"
+      }
+    },
+    "transcript": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading1, strong, em, hyperlink, list-item, o-list-item",
+        "label": "Transcript"
+      }
+    }
+  }
+}

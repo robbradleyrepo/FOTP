@@ -1,0 +1,275 @@
+{
+  "Main": {
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (internal use only)"
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Handle (must match Shopify product handle)"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "Description"
+      }
+    },
+    "announcement_enabled": {
+      "type": "Boolean",
+      "config": {
+        "default_value": false,
+        "label": "Enable Announcement?"
+      }
+    },
+    "announcement": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "allowTargetBlank": true,
+        "label": "Announcement"
+      }
+    }
+  },
+  "Ingredients": {
+    "ingredients_title": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "em",
+        "allowTargetBlank": true,
+        "label": "Title"
+      }
+    },
+    "ingredients_description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "Description"
+      }
+    },
+    "ingredients": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "ingredient": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["ingredient"],
+              "label": "Ingredient"
+            }
+          }
+        },
+        "label": "Ingredients"
+      }
+    },
+    "ingredients_call_to_action": {
+      "type": "StructuredText",
+      "config": {
+        "single": "em",
+        "allowTargetBlank": true,
+        "label": "Call to action"
+      }
+    }
+  },
+  "Supplement Facts": {
+    "use": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, list-item, o-list-item",
+        "label": "Use"
+      }
+    },
+    "typical_values_label": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "strong, em",
+        "label": "Typical values label"
+      }
+    },
+    "typical_values": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "name": {
+            "type": "Text",
+            "config": {
+              "label": "Name"
+            }
+          },
+          "value": {
+            "type": "Text",
+            "config": {
+              "label": "Value"
+            }
+          }
+        },
+        "label": "Typical active ingredients"
+      }
+    },
+    "other_ingredients": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Other Ingredients"
+      }
+    },
+    "serving_sizes": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "name": {
+            "type": "Text",
+            "config": {
+              "label": "Name"
+            }
+          },
+          "value": {
+            "type": "Text",
+            "config": {
+              "label": "Value"
+            }
+          }
+        },
+        "label": "Serving sizes"
+      }
+    },
+    "suitability": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, list-item, o-list-item",
+        "label": "Suitability"
+      }
+    },
+    "macronutrient_facts": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "serving_size": {
+            "type": "StructuredText",
+            "config": {
+              "single": "strong, em",
+              "label": "Serving size"
+            }
+          },
+          "servings_per_container": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "strong, em",
+              "label": "Servings per container"
+            }
+          },
+          "calories": {
+            "type": "StructuredText",
+            "config": {
+              "single": "em",
+              "label": "Calories"
+            }
+          },
+          "calories_from_fat": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "em",
+              "label": "Calories from fat"
+            }
+          },
+          "total_fat": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "em",
+              "label": "Total fat"
+            }
+          },
+          "total_carbohydrate": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "em",
+              "label": "Total carbohydrate"
+            }
+          },
+          "dietary_fiber": {
+            "type": "StructuredText",
+            "config": {
+              "single": "em",
+              "label": "Dietary fiber"
+            }
+          },
+          "sugars": {
+            "type": "StructuredText",
+            "config": {
+              "single": "em",
+              "label": "Sugars"
+            }
+          },
+          "protein": {
+            "type": "StructuredText",
+            "config": {
+              "single": "em",
+              "label": "Protein"
+            }
+          },
+          "disclaimer": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph, strong, em, hyperlink",
+              "label": "Disclaimer"
+            }
+          }
+        },
+        "label": "Macronutrient facts",
+        "repeat": false
+      }
+    }
+  },
+  "Benefits": {
+    "benefits": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "benefit": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["benefit"],
+              "label": "benefit"
+            }
+          }
+        },
+        "label": "Benefits"
+      }
+    }
+  },
+  "SEO": {
+    "social_media_title": {
+      "type": "Text",
+      "config": {
+        "label": "Social media title",
+        "placeholder": "Optional page title used when the page is shared. Leave blank to use SEO title. Max 55 characters."
+      }
+    },
+    "social_media_description": {
+      "type": "Text",
+      "config": {
+        "label": "Social media description",
+        "placeholder": "Optional description used when the page is shared. Leave blank to use SEO description. Max 200 characters."
+      }
+    },
+    "social_media_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1200,
+          "height": 630
+        },
+        "thumbnails": [],
+        "label": "Social media image"
+      }
+    }
+  }
+}

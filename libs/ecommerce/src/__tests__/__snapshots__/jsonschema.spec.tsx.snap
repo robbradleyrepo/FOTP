@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductSchema should render a valid JSON 1`] = `
+<DocumentFragment>
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"https://schema.org","@type":"Product","aggregateRating":{"@type":"AggregateRating","ratingCount":2,"ratingValue":4.5},"brand":"Front Of The Pack","description":"Targeted joint and mobility support","image":["https://cdn.shopify.com/mock-image/product-1.jpg"],"name":"Move – Targeted joint and mobility support","offers":[{"@type":"Offer","availability":"https://schema.org/InStock","description":"Targeted joint and mobility support","image":"https://cdn.shopify.com/mock-image/variant-4.jpg","itemCondition":"https://schema.org/NewCondition","name":"Move – Targeted joint and mobility support","price":"34.99","priceCurrency":"USD","priceValidUntil":"2022-01-02","seller":"Front Of The Pack","sku":"move","url":"https://example.com/products/move?variant=31746650406990"}],"productID":"4535537533006","sku":"move","url":"https://example.com/products/move"}
+  </script>
+</DocumentFragment>
+`;

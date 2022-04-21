@@ -1,0 +1,440 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Enhanced data appends the appropriate product container 1`] = `
+Object {
+  "compareAtPrice": null,
+  "image": Object {
+    "height": 1024,
+    "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjg1NjU0MzQyNjk3NzQ=",
+    "url": "https://cdn.shopify.com/fake/card-tube.jpg",
+    "width": 1024,
+  },
+  "price": Object {
+    "amount": "0.0",
+    "currencyCode": "USD",
+  },
+  "productId": "otp-container-product-id",
+  "title": "Card tube",
+  "variantId": "otp-container-variant-id",
+}
+`;
+
+exports[`Cart Enhanced data appends the appropriate product container 2`] = `
+Object {
+  "compareAtPrice": Object {
+    "amount": "14.99",
+    "currencyCode": "USD",
+  },
+  "image": Object {
+    "height": 1024,
+    "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjg1NjU0MzQyNjk3NzQ=",
+    "url": "https://cdn.shopify.com/fake/premium-tin.jpg",
+    "width": 1024,
+  },
+  "price": Object {
+    "amount": "0.0",
+    "currencyCode": "USD",
+  },
+  "productId": "sub-container-product-id",
+  "title": "Premium tin",
+  "variantId": "sub-container-variant-id",
+}
+`;
+
+exports[`Cart Enhanced data appends the appropriate product container 3`] = `
+Object {
+  "compareAtPrice": null,
+  "image": Object {
+    "height": 1024,
+    "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjg1NjU0MzQyNjk3NzQ=",
+    "url": "https://cdn.shopify.com/fake/premium-tin.jpg",
+    "width": 1024,
+  },
+  "price": Object {
+    "amount": "14.99",
+    "currencyCode": "USD",
+  },
+  "productId": "sub-container-product-id",
+  "title": "Premium tin",
+  "variantId": "sub-container-variant-id",
+}
+`;
+
+exports[`Cart Enhanced data updates stale cart data 1`] = `
+Object {
+  "itemCount": 2,
+  "lineItems": Array [
+    Object {
+      "container": null,
+      "containerPrices": null,
+      "frequency": null,
+      "handle": "move",
+      "id": "abc",
+      "imageUrl": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+      "lineCompareAtPrice": Object {
+        "__typename": "MoneyV2",
+        "amount": "79.98",
+        "currencyCode": "USD",
+      },
+      "linePrice": Object {
+        "__typename": "MoneyV2",
+        "amount": "69.98",
+        "currencyCode": "USD",
+      },
+      "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1MzU1Mzc1MzMwMDY=",
+      "properties": Object {},
+      "quantity": 2,
+      "subscriptionUnitPrice": Object {
+        "amount": "29.99",
+        "currencyCode": "USD",
+      },
+      "subtitle": "Default Title",
+      "title": "Move",
+      "unitPrice": Object {
+        "__typename": "MoneyV2",
+        "amount": "34.99",
+        "currencyCode": "USD",
+      },
+      "variant": Object {
+        "__typename": "ProductVariant",
+        "availableForSale": true,
+        "barcode": "123",
+        "bundleSize": null,
+        "compareAtPriceV2": Object {
+          "__typename": "MoneyV2",
+          "amount": "39.99",
+          "currencyCode": "USD",
+        },
+        "defaultShippingIntervalFrequency": Object {
+          "__typename": "Metafield",
+          "id": "defaultShippingIntervalFrequency-1",
+          "value": "1",
+        },
+        "id": "123",
+        "image": Object {
+          "__typename": "Image",
+          "height": 1000,
+          "id": "4",
+          "url": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+          "width": 1000,
+        },
+        "listingUsp": null,
+        "priceV2": Object {
+          "__typename": "MoneyV2",
+          "amount": "34.99",
+          "currencyCode": "USD",
+        },
+        "product": Object {
+          "__typename": "Product",
+          "containers": null,
+          "description": "Targeted joint and mobility support",
+          "featuredImage": Object {
+            "__typename": "ImageConnection",
+            "edges": Array [
+              Object {
+                "__typename": "ImageEdge",
+                "node": Object {
+                  "__typename": "Image",
+                  "id": "1",
+                  "src": "https://cdn.shopify.com/mock-image/product-1.jpg",
+                },
+              },
+            ],
+          },
+          "handle": "move",
+          "hasSubscription": null,
+          "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1MzU1Mzc1MzMwMDY=",
+          "isSubscriptionOnly": null,
+          "preorderType": null,
+          "priceRange": Object {
+            "__typename": "ProductPriceRange",
+            "maxVariantPrice": Object {
+              "__typename": "MoneyV2",
+              "amount": "95.98",
+              "currencyCode": "USD",
+            },
+            "minVariantPrice": Object {
+              "__typename": "MoneyV2",
+              "amount": "35.99",
+              "currencyCode": "USD",
+            },
+          },
+          "productType": "Pet Vitamins & Supplements",
+          "subscriptionFrequencies": null,
+          "subscriptionUnit": null,
+          "subtitle": Object {
+            "__typename": "Metafield",
+            "id": "metafield-subtitle-move",
+            "value": "Targeted joint and mobility support",
+          },
+          "title": "Move",
+          "unit": null,
+          "vendor": "Front Of The Pack",
+        },
+        "quantityAvailable": 10,
+        "selectedOptions": Array [
+          Object {
+            "__typename": "SelectedOption",
+            "name": "Title",
+            "value": "Default Title",
+          },
+        ],
+        "sku": "move",
+        "subscriptionPriceAmount": Object {
+          "__typename": "Metafield",
+          "id": "Z2lkOi8vc2hvcGlmeS9NZXRhZmllbGQvMTI5ODIzNzg3NTgyMjI=",
+          "value": "29.99",
+        },
+        "title": "Default Title",
+        "units": Object {
+          "__typename": "Metafield",
+          "id": "gid://shopify/Metafield/1",
+          "value": "60",
+        },
+      },
+      "variantId": "123",
+    },
+  ],
+  "lineItemsSavingsPrice": Object {
+    "amount": "10",
+    "currencyCode": "USD",
+  },
+  "lineItemsSubtotalPrice": Object {
+    "amount": "69.98",
+    "currencyCode": "USD",
+  },
+  "shippingThreshold": null,
+}
+`;
+
+exports[`Cart Hook and provider restores from localstorage if available 1`] = `
+Object {
+  "associateCheckout": [Function],
+  "checkoutId": null,
+  "customAttributes": Object {
+    "foo": "bar",
+  },
+  "discountCode": "SAVE",
+  "id": "cart123",
+  "itemCount": 1,
+  "lineItemUpdate": [Function],
+  "lineItems": Array [
+    Object {
+      "containerPrices": null,
+      "frequency": null,
+      "handle": "move",
+      "id": "foo",
+      "imageUrl": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+      "linePrice": Object {
+        "amount": "34.99",
+        "currencyCode": "USD",
+      },
+      "productId": "productABC",
+      "properties": Object {},
+      "quantity": 1,
+      "subscriptionUnitPrice": Object {
+        "amount": "29.99",
+        "currencyCode": "USD",
+      },
+      "subtitle": "Default Title",
+      "title": "Move",
+      "unitPrice": Object {
+        "amount": "34.99",
+        "currencyCode": "USD",
+      },
+      "variantId": "variant123",
+    },
+  ],
+  "lineItemsSavingsPrice": null,
+  "lineItemsSubtotalPrice": Object {
+    "amount": "34.99",
+    "currencyCode": "USD",
+  },
+  "rCheckoutId": null,
+  "replace": [Function],
+  "reset": [Function],
+  "setCustomAttributes": [Function],
+  "setDiscountCode": [Function],
+  "shippingThreshold": null,
+  "status": "FETCHING",
+}
+`;
+
+exports[`Cart Hook and provider retrieves per-variant information such as skus, titles, ... 1`] = `
+Object {
+  "amount": "0.0",
+  "currencyCode": "USD",
+}
+`;
+
+exports[`Cart Hook and provider retrieves per-variant information such as skus, titles, ... 2`] = `
+Array [
+  Object {
+    "containerPrices": null,
+    "frequency": null,
+    "handle": "move",
+    "id": "fake-id-1",
+    "imageUrl": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+    "linePrice": Object {
+      "amount": "34.99",
+      "currencyCode": "USD",
+    },
+    "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1MzU1Mzc1MzMwMDY=",
+    "properties": Object {},
+    "quantity": 1,
+    "subscriptionUnitPrice": Object {
+      "amount": "29.99",
+      "currencyCode": "USD",
+    },
+    "subtitle": "Default Title",
+    "title": "Move",
+    "unitPrice": Object {
+      "amount": "34.99",
+      "currencyCode": "USD",
+    },
+    "variantId": "variant123",
+  },
+]
+`;
+
+exports[`Cart Hook and provider retrieves per-variant information such as skus, titles, ... 3`] = `
+Array [
+  Object {
+    "container": null,
+    "containerPrices": null,
+    "frequency": null,
+    "handle": "move",
+    "id": "fake-id-1",
+    "imageUrl": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+    "lineCompareAtPrice": Object {
+      "__typename": "MoneyV2",
+      "amount": "39.99",
+      "currencyCode": "USD",
+    },
+    "linePrice": Object {
+      "__typename": "MoneyV2",
+      "amount": "34.99",
+      "currencyCode": "USD",
+    },
+    "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1MzU1Mzc1MzMwMDY=",
+    "properties": Object {},
+    "quantity": 1,
+    "subscriptionUnitPrice": Object {
+      "amount": "29.99",
+      "currencyCode": "USD",
+    },
+    "subtitle": "Default Title",
+    "title": "Move",
+    "unitPrice": Object {
+      "__typename": "MoneyV2",
+      "amount": "34.99",
+      "currencyCode": "USD",
+    },
+    "variant": Object {
+      "__typename": "ProductVariant",
+      "availableForSale": true,
+      "barcode": "123",
+      "bundleSize": null,
+      "compareAtPriceV2": Object {
+        "__typename": "MoneyV2",
+        "amount": "39.99",
+        "currencyCode": "USD",
+      },
+      "defaultShippingIntervalFrequency": Object {
+        "__typename": "Metafield",
+        "id": "defaultShippingIntervalFrequency-1",
+        "value": "1",
+      },
+      "id": "variant123",
+      "image": Object {
+        "__typename": "Image",
+        "height": 1000,
+        "id": "4",
+        "url": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+        "width": 1000,
+      },
+      "listingUsp": null,
+      "priceV2": Object {
+        "__typename": "MoneyV2",
+        "amount": "34.99",
+        "currencyCode": "USD",
+      },
+      "product": Object {
+        "__typename": "Product",
+        "containers": null,
+        "description": "Targeted joint and mobility support",
+        "featuredImage": Object {
+          "__typename": "ImageConnection",
+          "edges": Array [
+            Object {
+              "__typename": "ImageEdge",
+              "node": Object {
+                "__typename": "Image",
+                "id": "1",
+                "src": "https://cdn.shopify.com/mock-image/product-1.jpg",
+              },
+            },
+          ],
+        },
+        "handle": "move",
+        "hasSubscription": null,
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ1MzU1Mzc1MzMwMDY=",
+        "isSubscriptionOnly": null,
+        "preorderType": null,
+        "priceRange": Object {
+          "__typename": "ProductPriceRange",
+          "maxVariantPrice": Object {
+            "__typename": "MoneyV2",
+            "amount": "95.98",
+            "currencyCode": "USD",
+          },
+          "minVariantPrice": Object {
+            "__typename": "MoneyV2",
+            "amount": "35.99",
+            "currencyCode": "USD",
+          },
+        },
+        "productType": "Pet Vitamins & Supplements",
+        "subscriptionFrequencies": null,
+        "subscriptionUnit": null,
+        "subtitle": Object {
+          "__typename": "Metafield",
+          "id": "metafield-subtitle-move",
+          "value": "Targeted joint and mobility support",
+        },
+        "title": "Move",
+        "unit": null,
+        "vendor": "Front Of The Pack",
+      },
+      "quantityAvailable": 10,
+      "selectedOptions": Array [
+        Object {
+          "__typename": "SelectedOption",
+          "name": "Title",
+          "value": "Default Title",
+        },
+      ],
+      "sku": "move",
+      "subscriptionPriceAmount": Object {
+        "__typename": "Metafield",
+        "id": "Z2lkOi8vc2hvcGlmeS9NZXRhZmllbGQvMTI5ODIzNzg3NTgyMjI=",
+        "value": "29.99",
+      },
+      "title": "Default Title",
+      "units": Object {
+        "__typename": "Metafield",
+        "id": "gid://shopify/Metafield/1",
+        "value": "60",
+      },
+    },
+    "variantId": "variant123",
+  },
+]
+`;
+
+exports[`Cart Hook and provider retrieves per-variant information such as skus, titles, ... 4`] = `
+Object {
+  "amount": "5",
+  "currencyCode": "USD",
+}
+`;

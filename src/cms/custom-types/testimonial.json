@@ -1,0 +1,32 @@
+{
+  "Main": {
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (internal use only)"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "quote": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em",
+        "label": "Quote"
+      }
+    },
+    "attribution": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Attribution"
+      }
+    }
+  }
+}

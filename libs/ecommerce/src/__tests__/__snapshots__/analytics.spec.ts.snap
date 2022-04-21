@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mappers mapCartLineItemToDataLayer 1`] = `
+Object {
+  "brand": "Front Of The Pack",
+  "category": "Pet Vitamins & Supplements",
+  "compare_at_price": "39.99",
+  "gtin": "123",
+  "handle": "move",
+  "id": "move",
+  "image": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+  "is_preorder": false,
+  "name": "Move",
+  "position": 0,
+  "price": "5.00",
+  "product_id": "4535537533006",
+  "product_url": "https://example.com/products/move",
+  "purchase_type": "one time",
+  "quantity": 1,
+  "variant": "",
+  "variant_id": "",
+}
+`;
+
+exports[`mappers mapProductToDataLayer 1`] = `
+Object {
+  "brand": "Front Of The Pack",
+  "category": "Pet Vitamins & Supplements",
+  "compare_at_price": "",
+  "handle": "move",
+  "id": "",
+  "image": "https://cdn.shopify.com/mock-image/product-1.jpg",
+  "is_preorder": false,
+  "name": "Move",
+  "price": "35.99",
+  "product_id": "4535537533006",
+  "product_url": "https://example.com/products/move",
+  "variant": "",
+  "variant_id": "",
+}
+`;
+
+exports[`mappers mapProductToDataLayer preorder 1`] = `
+Object {
+  "brand": "Front Of The Pack",
+  "category": "Pet Vitamins & Supplements",
+  "compare_at_price": "",
+  "handle": "move",
+  "id": "",
+  "image": "https://cdn.shopify.com/mock-image/product-1.jpg",
+  "is_preorder": true,
+  "name": "Move",
+  "price": "35.99",
+  "product_id": "4535537533006",
+  "product_url": "https://example.com/products/move",
+  "variant": "",
+  "variant_id": "",
+}
+`;
+
+exports[`mappers mapProductToDataLayer preorder 2`] = `
+Object {
+  "brand": "Front Of The Pack",
+  "category": "Pet Vitamins & Supplements",
+  "compare_at_price": "",
+  "handle": "move",
+  "id": "",
+  "image": "https://cdn.shopify.com/mock-image/product-1.jpg",
+  "is_preorder": true,
+  "name": "Move",
+  "price": "35.99",
+  "product_id": "4535537533006",
+  "product_url": "https://example.com/products/move",
+  "variant": "",
+  "variant_id": "",
+}
+`;
+
+exports[`mappers mapProductVariantToDataLayer OTP 1`] = `
+Object {
+  "brand": "Front Of The Pack",
+  "category": "Pet Vitamins & Supplements",
+  "compare_at_price": "39.99",
+  "gtin": "123",
+  "handle": "move",
+  "id": "move",
+  "image": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+  "is_preorder": false,
+  "name": "Move",
+  "price": "34.99",
+  "product_id": "4535537533006",
+  "product_url": "https://example.com/products/move",
+  "purchase_type": "one time",
+  "variant": "",
+  "variant_id": "",
+}
+`;
+
+exports[`mappers mapProductVariantToDataLayer Sub 1`] = `
+Object {
+  "brand": "Front Of The Pack",
+  "category": "Pet Vitamins & Supplements",
+  "compare_at_price": "39.99",
+  "gtin": "123",
+  "handle": "move",
+  "id": "move",
+  "image": "https://cdn.shopify.com/mock-image/variant-4.jpg",
+  "interval_frequency": 1,
+  "interval_unit": "MONTH",
+  "is_preorder": false,
+  "name": "Move",
+  "price": "34.99",
+  "product_id": "4535537533006",
+  "product_url": "https://example.com/products/move",
+  "purchase_type": "subscribe",
+  "variant": "",
+  "variant_id": "",
+}
+`;

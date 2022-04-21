@@ -1,0 +1,49 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/.next/
+/build/
+/out/
+/generated/
+public/sitemap*.xml
+public/robots.txt
+*.tsbuildinfo
+/storybook-static/
+
+# dependencies
+/node_modules
+.venv
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+
+# misc
+.eslintcache
+.jestcache/
+/.sass-cache
+/connect.lock
+/coverage
+/test-results
+/typings
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+.keys/
+.now/
+.vercel/

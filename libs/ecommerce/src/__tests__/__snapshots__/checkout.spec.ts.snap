@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cartLineitemsToCheckoutInput should map cart line item values to a valid checkout line item input 1`] = `
+Array [
+  Object {
+    "frequency": null,
+    "productId": "product-123",
+    "properties": Array [
+      Object {
+        "name": "cartLineItemId",
+        "value": "cart-line-item-123",
+      },
+    ],
+    "quantity": 12,
+    "variantId": "variant-123",
+  },
+  Object {
+    "frequency": Object {
+      "chargeDelayDays": null,
+      "orderIntervalFrequency": 30,
+      "orderIntervalUnit": "DAY",
+    },
+    "productId": "product-456",
+    "properties": Array [
+      Object {
+        "name": "cartLineItemId",
+        "value": "cart-line-item-456",
+      },
+    ],
+    "quantity": 34,
+    "variantId": "variant-456",
+  },
+]
+`;
+
+exports[`cartLineitemsToCheckoutInput should map cart line items' containers to separate checkout line items 1`] = `
+Array [
+  Object {
+    "frequency": null,
+    "productId": "product-123",
+    "properties": Array [
+      Object {
+        "name": "cartLineItemId",
+        "value": "cart-line-item-123",
+      },
+    ],
+    "quantity": 12,
+    "variantId": "variant-123",
+  },
+  Object {
+    "frequency": null,
+    "productId": "container-product-123",
+    "properties": Array [
+      Object {
+        "name": "cartLineItemId",
+        "value": "cart-line-item-123",
+      },
+      Object {
+        "name": "lineItemType",
+        "value": "container",
+      },
+    ],
+    "quantity": 1,
+    "variantId": "container-variant-123",
+  },
+  Object {
+    "frequency": Object {
+      "chargeDelayDays": null,
+      "orderIntervalFrequency": 30,
+      "orderIntervalUnit": "DAY",
+    },
+    "productId": "product-456",
+    "properties": Array [
+      Object {
+        "name": "cartLineItemId",
+        "value": "cart-line-item-456",
+      },
+    ],
+    "quantity": 34,
+    "variantId": "variant-456",
+  },
+  Object {
+    "frequency": null,
+    "productId": "container-product-123",
+    "properties": Array [
+      Object {
+        "name": "cartLineItemId",
+        "value": "cart-line-item-456",
+      },
+      Object {
+        "name": "lineItemType",
+        "value": "container",
+      },
+    ],
+    "quantity": 1,
+    "variantId": "container-variant-123",
+  },
+]
+`;
+
+exports[`checkout update mock queries should replace line item 1`] = `
+Array [
+  Object {
+    "__typename": "RLineItem",
+    "frequency": Object {
+      "__typename": "RFrequency",
+      "chargeDelayDays": null,
+      "orderIntervalFrequency": 30,
+      "orderIntervalUnit": "DAY",
+    },
+    "id": "E9vEeaxExeZQv38FGeT+UAVTr/o=",
+    "image": "https://cdn.shopify.com/s/files/1/0266/2825/9918/products/the-one-x1.png?v=1589206978",
+    "linePrice": Object {
+      "__typename": "MoneyV2",
+      "amount": "34.37",
+      "currencyCode": "USD",
+    },
+    "price": Object {
+      "__typename": "MoneyV2",
+      "amount": "34.37",
+      "currencyCode": "USD",
+    },
+    "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzE=",
+    "productType": "",
+    "properties": Array [],
+    "quantity": 1,
+    "sku": "FPTO01-PH",
+    "title": "The One",
+    "variantId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8x",
+    "variantTitle": "1 pouch",
+    "vendor": "Front Of The Pack",
+  },
+]
+`;

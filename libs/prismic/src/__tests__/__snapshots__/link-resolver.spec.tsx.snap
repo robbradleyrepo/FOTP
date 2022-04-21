@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`documentResolver handle-based routes batch_result should interpolate the \`{{ handle }}\` placeholder 1`] = `"/science/testing-and-transparency/foo"`;
+
+exports[`documentResolver handle-based routes batch_result should throw an error for pages without a UID 1`] = `"Missing UID for document type \\"batch_result\\" on document ID \\"0123456789abcdef\\""`;
+
+exports[`documentResolver handle-based routes expert should interpolate the \`{{ handle }}\` placeholder 1`] = `"/science/experts/foo"`;
+
+exports[`documentResolver handle-based routes expert should throw an error for pages without a UID 1`] = `"Missing UID for document type \\"expert\\" on document ID \\"0123456789abcdef\\""`;
+
+exports[`documentResolver handle-based routes landing_page should interpolate the \`{{ handle }}\` placeholder 1`] = `"/landing/foo"`;
+
+exports[`documentResolver handle-based routes landing_page should throw an error for pages without a UID 1`] = `"Missing UID for document type \\"landing_page\\" on document ID \\"0123456789abcdef\\""`;
+
+exports[`documentResolver handle-based routes product should interpolate the \`{{ handle }}\` placeholder 1`] = `"/products/foo"`;
+
+exports[`documentResolver handle-based routes product should throw an error for pages without a UID 1`] = `"Missing UID for document type \\"product\\" on document ID \\"0123456789abcdef\\""`;
+
+exports[`documentResolver handle-based routes product_page should interpolate the \`{{ handle }}\` placeholder 1`] = `"/products/foo"`;
+
+exports[`documentResolver handle-based routes product_page should throw an error for pages without a UID 1`] = `"Missing UID for document type \\"product_page\\" on document ID \\"0123456789abcdef\\""`;
+
+exports[`documentResolver should by default throw an error for unmapped documents 1`] = `"Unable to resolve document with type \\"unknown\\" and ID \\"0123456789abcdef\\""`;
+
+exports[`documentResolver static routes evidence_page should interpolate the \`{{ handle }}\` placeholder 1`] = `"science/evidence"`;
+
+exports[`documentResolver static routes experts_page should interpolate the \`{{ handle }}\` placeholder 1`] = `"/science/experts"`;
+
+exports[`documentResolver static routes faq_page should interpolate the \`{{ handle }}\` placeholder 1`] = `"/help/faq"`;
+
+exports[`documentResolver static routes home_page should interpolate the \`{{ handle }}\` placeholder 1`] = `"/"`;
+
+exports[`documentResolver static routes ingredients_page should interpolate the \`{{ handle }}\` placeholder 1`] = `"/science/ingredients"`;
+
+exports[`documentResolver static routes testing_page should interpolate the \`{{ handle }}\` placeholder 1`] = `"/science/testing-and-transparency"`;
+
+exports[`documentResolver tag-based routes article_page should throw an error for pages without tags 1`] = `"Missing tags on article page \\"foo\\""`;
+
+exports[`linkNormalizer should handle Prismic documents 1`] = `
+Object {
+  "_linkType": "Link.document",
+  "_meta": Object {
+    "id": "XlOmChEAACUAkyRa",
+    "lang": "us-en",
+    "tags": Array [
+      "Foo",
+    ],
+    "type": "product",
+    "uid": "the-one",
+  },
+}
+`;
+
+exports[`linkNormalizer should handle external links 1`] = `
+Object {
+  "_linkType": "Link.web",
+  "url": "https://us.fotp.com/",
+}
+`;
+
+exports[`linkNormalizer should handle files 1`] = `
+Object {
+  "_linkType": "Link.file",
+  "name": "mv-01620du-genista-potency.pdf",
+  "size": 204041,
+  "url": "https://prod-fotp-frontend.cdn.prismic.io/prod-fotp-frontend/bc2b9493-eafa-4394-b554-39dfe01f6cd4_mv-01620du-genista-potency.pdf",
+}
+`;
+
+exports[`linkNormalizer should handle images 1`] = `
+Object {
+  "_linkType": "Link.image",
+  "height": 600,
+  "name": "harmony-feature-subscribe-and-save.png",
+  "size": 176120,
+  "url": "https://images.prismic.io/prod-fotp-frontend/c142111c-666f-461a-ba43-f2e3af90edab_harmony-feature-subscribe-and-save.png?auto=compress,format",
+  "width": 737,
+}
+`;
+
+exports[`linkNormalizer should throw on unknown link types 1`] = `"Invalid link type supplied: expected \\"Document\\" | \\"Media\\" | \\"Web\\", got \\"Foo\\""`;

@@ -1,0 +1,40 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle"
+      }
+    },
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Name"
+      }
+    },
+    "value": {
+      "type": "StructuredText",
+      "config": {
+        "single": "strong, em",
+        "label": "Value"
+      }
+    },
+    "icon": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "brain",
+          "calming",
+          "dental",
+          "digestion",
+          "heart",
+          "joints",
+          "protect",
+          "skinCoat"
+        ],
+        "label": "Icon"
+      }
+    }
+  }
+}

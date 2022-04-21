@@ -1,0 +1,102 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Handle"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,heading2,heading3,list-item,o-list-item",
+        "label": "Description"
+      }
+    },
+    "course_highlights": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,heading2,heading3,list-item,o-list-item",
+        "label": "Course highlights"
+      }
+    },
+    "hero_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Hero Image"
+      }
+    },
+    "expert": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["expert"],
+        "label": "Expert"
+      }
+    },
+    "videos": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "video": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["education_video"],
+              "label": "Video"
+            }
+          }
+        },
+        "label": "Videos"
+      }
+    },
+    "youtube_playlist_url": {
+      "type": "Text",
+      "config": {
+        "label": "Youtube Playlist URL"
+      }
+    }
+  },
+  "SEO": {
+    "seo_title": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Title"
+      }
+    },
+    "seo_description": {
+      "type": "Text",
+      "config": {
+        "label": "SEO Description"
+      }
+    },
+    "social_media_title": {
+      "type": "Text",
+      "config": {
+        "label": "Social media title"
+      }
+    },
+    "social_media_description": {
+      "type": "Text",
+      "config": {
+        "label": "Social media description"
+      }
+    }
+  },
+  "Config": {
+    "klaviyo_id": {
+      "type": "Text",
+      "config": {
+        "label": "Klaviyo ID"
+      }
+    }
+  }
+}

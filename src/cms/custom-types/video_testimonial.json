@@ -1,0 +1,46 @@
+{
+  "Main": {
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "title"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "config": {
+        "label": "description"
+      }
+    },
+    "caption": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph, strong, em",
+        "label": "caption (optional)"
+      }
+    },
+    "vimeo_link": {
+      "type": "Link",
+      "config": {
+        "label": "vimeo_link",
+        "placeholder": "The Vimeo video URL",
+        "select": "web"
+      }
+    },
+    "thumbnail": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "thumbnail"
+      }
+    },
+    "quality": {
+      "type": "Select",
+      "config": {
+        "options": ["Great", "Good"],
+        "label": "quality"
+      }
+    }
+  }
+}

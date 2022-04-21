@@ -1,0 +1,32 @@
+{
+  "Main": {
+    "_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (internal use only)"
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Handle"
+      }
+    },
+    "ingredients": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "ingredient": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "customtypes": ["ingredient"],
+              "label": "Ingredient"
+            }
+          }
+        },
+        "label": "Ingredients"
+      }
+    }
+  }
+}

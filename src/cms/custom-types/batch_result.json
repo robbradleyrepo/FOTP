@@ -1,0 +1,96 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "handle (batch code as a slug, strip any - and #)",
+        "placeholder": "e.g. to01620du"
+      }
+    },
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title (Actual batch name)",
+        "placeholder": "e.g. #TO-01620DU"
+      }
+    },
+    "product_handle": {
+      "type": "Text",
+      "config": {
+        "label": "Product Handle (must match Shopify product handle)"
+      }
+    },
+    "produced": {
+      "type": "Date",
+      "config": {
+        "label": "Produced"
+      }
+    },
+    "best_before": {
+      "type": "Date",
+      "config": {
+        "label": "Best Before"
+      }
+    },
+    "status": {
+      "type": "Select",
+      "config": {
+        "options": ["pass", "fail"],
+        "default_value": "pass",
+        "label": "Status"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "result": []
+        },
+        "choices": {
+          "result": {
+            "type": "Slice",
+            "fieldset": "Result",
+            "description": "Test Result",
+            "icon": "check",
+            "display": "list",
+            "non-repeat": {
+              "lab_test": {
+                "type": "Link",
+                "config": {
+                  "select": "document",
+                  "customtypes": ["lab_test"],
+                  "label": "Lab test"
+                }
+              },
+              "status": {
+                "type": "Select",
+                "config": {
+                  "options": ["pass", "fail"],
+                  "default_value": "pass",
+                  "label": "status"
+                }
+              }
+            },
+            "repeat": {
+              "report_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Report label (default: \"View report\")",
+                  "placeholder": "View report"
+                }
+              },
+              "report": {
+                "type": "Link",
+                "config": {
+                  "select": "media",
+                  "label": "Report"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
